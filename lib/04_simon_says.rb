@@ -8,16 +8,17 @@ def shout (word)
 end 
 
 def repeat (word, y=0)
-   x = word
-   if nb < 1 
-       return x + " " + word
-    (y-1). times do |i|
-           x + word
+   word1 = word
+   if y < 1 
+       return word1 + " "+ word
+   else y > 1
+    3.times do |i|
+        return word
     end 
+    end
 end 
-# y = on repète y fois le mots
     
-def strats_of_the_word (word, number)
+def start_of_word (word, number)
    return word [0, number]
 end 
 
